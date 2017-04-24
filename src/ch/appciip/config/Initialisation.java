@@ -1,11 +1,10 @@
-package config;
+package ch.appciip.config;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
-import modele.DataParser;
-import modele.Factory;
+import ch.appciip.model.Factory;
 
 public class Initialisation implements ServletContextListener {
 	private static final String ATT_FACTORY = "factory";
@@ -14,14 +13,18 @@ public class Initialisation implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent event) {
-		/* R�cup�ration du ServletContext lors du chargement de l'application */
+		/*
+		 * R�cup�ration du ServletContext lors du chargement de
+		 * l'application
+		 */
 		ServletContext servletContext = event.getServletContext();
 		/* Instanciation de notre Factory */
 		this.factory = Factory.getInstance();
 		// Execution du thread toutes les 4 heures
-		new DataParser(14400);
+		// new DataParser(14400);
 		/*
-		 * Enregistrement dans un attribut ayant pour port�e toute l'application
+		 * Enregistrement dans un attribut ayant pour port�e toute
+		 * l'application
 		 */
 		servletContext.setAttribute(ATT_FACTORY, this.factory);
 	}
