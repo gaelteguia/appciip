@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string name="app_name">App Ciip</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_manifestation_detail">ManifestationDetailActivity</string>
+    <string name="title_activity_holiday_detail">HolidayDetailActivity</string>
+    <string name="title_activity_inscription">InscriptionActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+
+    <string name="about_text"><b>App Ciip</b> by Gaël Teguia.</string>
+    <string name="default_text">AppCiip</string>
+    <string name="btSubscribe">Inscription</string>
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+
+</resources>
